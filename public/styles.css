@@ -24,9 +24,44 @@ body {
   right: 0;
   transition: all 0.3s ease-in-out;
 }
+.search-bar {
+  display: flex; /* Align items horizontally */
+  align-items: center;
+  justify-content: center; /* Center the bar */
+  gap: 10px; /* Space between inputs and button */
+  margin: 20px; /* Add some spacing around the bar */
+}
+
+.search-input,
+.location-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px; /* Adjust as needed */
+  margin: -20px;
+}
+input:hover {
+  background-color: none;
+}
+
+.search-button {
+  padding: 11px 11px;
+  font-size: 16px;
+  background-color: red; /* Yelp-like color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: -10px;
+}
+
+.search-button:hover {
+  background-color: #0073e6; /* Darker shade for hover */
+}
 .nav .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 10px 0;
   transition: all 0.3s ease-in-out;
@@ -62,7 +97,8 @@ body {
   color: #c0392b;
   font-weight: bold;
 }
-.restaurants-list {
+/* api pushes here! */
+/* .restaurants-list {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -82,6 +118,25 @@ body {
 
 .restaurant h3 {
   margin: 0;
+} */
+
+.sign-up {
+  padding: 11px 11px;
+  font-size: 16px;
+  background-color: red; /* Yelp-like color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  gap: 80px;
+}
+.login {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.login:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .hero {
   background: red;
@@ -125,4 +180,65 @@ content p {
   color: #555;
   line-height: 30px;
   letter-spacing: 1.2px;
+}
+
+.search-bar {
+  margin-left: -25px;
+}
+h1 {
+  font-size: 30px;
+}
+ul .current {
+  margin-right: 30px;
+}
+
+/* Timeline Section */
+
+.timeline {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f7f7f7;
+  color: #333;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.story {
+  text-align: center;
+  position: sticky;
+  font-size: 36px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  white-space: normal; /* Allow wrapping for the heading */
+  color: #c0392b;
+  z-index:-1;
+}
+
+/* Timeline Container */
+.timeline {
+  background-color: transparent;
+}
+.timeline-container {
+  display: flex; /* Set horizontal layout */
+  gap: 20px; /* Add space between items */
+  padding: 100px;
+}
+
+.timeline-item {
+  flex: 0 0 300px; /* Fixed width for each item */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.timeline-item h2 {
+  font-size: 20px;
+  color: #c0392b;
+  margin-bottom: 10px;
+}
+
+.timeline-item p {
+  font-size: 16px;
 }
