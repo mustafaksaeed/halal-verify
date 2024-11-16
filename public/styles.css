@@ -140,7 +140,7 @@ input:hover {
 }
 .hero {
   background: red;
-  height: 80vh;
+  height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -211,7 +211,7 @@ ul .current {
   margin-bottom: 20px;
   white-space: normal; /* Allow wrapping for the heading */
   color: #c0392b;
-  z-index:-1;
+  z-index: -1;
 }
 
 /* Timeline Container */
